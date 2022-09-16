@@ -1,4 +1,4 @@
-﻿/ See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 
 //Snack 1:
 
@@ -149,4 +149,25 @@ for (int i = 0; i < numbers.Length; i++)
     }
 }
 Console.WriteLine(sum);
+
+//Snack 9:
+
+int[] emptyArray = new int[20];
+
+int summ = 0;
+
+while (summ < 50)
+{
+    Console.WriteLine("Ciao User, digita un numero");
+    int userNumber = Convert.ToInt32(Console.ReadLine());
+    emptyArray[0] += userNumber;
+    summ += userNumber;
+}
+foreach (int j in emptyArray)
+{
+    Console.Write(j);
+}
+
+
+
 
