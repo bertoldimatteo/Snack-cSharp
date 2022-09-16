@@ -91,3 +91,41 @@ for (int i = 0; i < 10; i++)
         Console.WriteLine("Hai scelto un numero dispari, scegli un'altro numero");
     }
 }
+
+// Snack 6
+
+string[] name = { "Thomas", "Anderson", "Michael", "Alexander", "Heisenberg" };
+
+Console.WriteLine("Benvenuto alla festa Sr. Può cortesemente dirmi il suo nome?");
+
+string guestName = Console.ReadLine();
+
+for (int i = 0; i < name.Length; i++)
+{
+    if (guestName == name[i])
+    {
+        Console.WriteLine($"Benvenuto alla festa {guestName}, si diverta");
+    }
+    else
+    {
+        Console.WriteLine($"Spiacente Sr. il suo nome non è sulla lista degli ospiti");
+    }
+    break;
+}
+
+// Snack 7
+
+int[] emptyArray = { };
+
+for (int i = 0; i < 6; i++)
+{
+    Console.WriteLine("Ciao User, digita un numero");
+    int userNumber = Convert.ToInt32(Console.ReadLine());
+
+    if (userNumber % 2 == 1)
+    {
+        emptyArray[0] = userNumber; //errore
+    }
+}
+
+Console.WriteLine(emptyArray);
