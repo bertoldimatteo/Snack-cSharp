@@ -113,19 +113,22 @@ for (int i = 0; i < name.Length; i++)
     break;
 }
 
-// Snack 7
+/// Snack 7
 
-int[] emptyArray = { };
+int[] emptyArray = new int[6];
 
 for (int i = 0; i < 6; i++)
 {
     Console.WriteLine("Ciao User, digita un numero");
     int userNumber = Convert.ToInt32(Console.ReadLine());
 
-    if (userNumber % 2 == 1)
+    if (userNumber % 2 == 1 && userNumber != 0)
     {
-        emptyArray[0] = userNumber; //errore
+        emptyArray[i] += userNumber;
     }
 }
 
-Console.WriteLine(emptyArray);
+foreach (int j in emptyArray)
+{
+    Console.Write(j);
+}
