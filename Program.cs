@@ -163,7 +163,7 @@ while (summ < 50)
     Console.WriteLine("Ciao User, digita un numero");
     int userNumber = Convert.ToInt32(Console.ReadLine());
     emptyArray[0] += userNumber;
-    summ + userNumber;
+    summ += userNumber;
 }
 foreach (int j in emptyArray)
 {
