@@ -124,7 +124,7 @@ for (int i = 0; i < 6; i++)
 
     if (userNumber % 2 == 1 && userNumber != 0)
     {
-        emptyArray[i] += userNumber;
+        emptyArray[i] = userNumber;
     }
 }
 
@@ -132,6 +132,8 @@ foreach (int j in emptyArray)
 {
     Console.Write(j);
 }
+
+
 
 //Snack 8:
 
@@ -161,13 +163,16 @@ while (summ < 50)
     Console.WriteLine("Ciao User, digita un numero");
     int userNumber = Convert.ToInt32(Console.ReadLine());
     emptyArray[0] += userNumber;
-    summ += userNumber;
+    summ + userNumber;
 }
 foreach (int j in emptyArray)
 {
     Console.Write(j);
 }
 
+// Snack 10
 
+Console.WriteLine("Ciao user inserisci un numero");
+int usernumber = Convert.ToInt32(Console.ReadLine());
 
-
+int[] randomArray = new int[10];
