@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/ See https://aka.ms/new-console-template for more information
 
 //Snack 1:
 
@@ -132,3 +132,21 @@ foreach (int j in emptyArray)
 {
     Console.Write(j);
 }
+
+//Snack 8:
+
+int[] numbers = { 10, 20, 14, 18, 25, 37, 50, 80, 28, 30 };
+
+int sum = 0;
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    int index = Array.IndexOf(numbers, numbers[i]);
+
+    if (index % 2 == 1)
+    {
+        sum += numbers[i];
+    }
+}
+Console.WriteLine(sum);
+
