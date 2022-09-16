@@ -12,7 +12,7 @@ int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 if (firstNumber > secondNumber)
 {
-    Console.WriteLine($"{firstNumber} è maggiore di {secondNumber}");  
+    Console.WriteLine($"{firstNumber} è maggiore di {secondNumber}");
 }
 else
 {
@@ -31,11 +31,63 @@ string firstWord = Console.ReadLine();
 Console.WriteLine("Scegli una seconda parola");
 string secondWord = Console.ReadLine();
 
-if ( firstWord.Length > secondWord.Length)
+if (firstWord.Length > secondWord.Length)
 {
     Console.WriteLine($"La parola {secondWord} è più corta di {firstWord}");
 }
 else
 {
     Console.WriteLine($"La parola {firstWord} è più corta di {secondWord}");
+}
+
+//Snack 3:
+//Chiedo 10 volte all'utente di inserire un numero + stampo somma tutti numeri
+
+int totalNumber = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine("Digita un numero");
+    int number = Convert.ToInt32(Console.ReadLine());
+    totalNumber += number;
+}
+
+Console.WriteLine($"La somma dei numeri che hai digitato è {totalNumber}");
+
+//Snack 4 calcola la somma e la media dei numeri da 2 a 10
+
+int[] number = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+int sumNumbers = 0;
+
+for (int i = 0; i < number.Length; i++)
+{
+    sumNumbers += number[i];
+}
+
+Console.WriteLine($"La somma dei numeri è {sumNumbers}");
+
+//Calcolo media
+int numberLength = number.Length;
+int mediaNumber = sumNumbers / numberLength;
+
+Console.WriteLine($"La media dei numeri è {mediaNumber}");
+
+//Snack 5 il software chiede un numero all'utente, se è pari stampa numero, se dispari, stampa numero successivo.
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine("Ciao User, scegli un numero");
+
+    int userNumber = Convert.ToInt32(Console.ReadLine());
+
+    if (userNumber % 2 == 0)
+    {
+        Console.WriteLine($"Il numero che hai digitato è {userNumber}, viene visualizzato poichè è pari");
+        break;
+    }
+    else
+    {
+        Console.WriteLine("Hai scelto un numero dispari, scegli un'altro numero");
+    }
 }
